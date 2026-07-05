@@ -1,0 +1,86 @@
+:root {
+    /*Cores fundo*/
+    --cor-principal-fundo: rgb(33, 31, 41);
+    --cor-contraste-fundo: rgb(0, 0, 255);
+
+    /*Cores Texto*/
+    --cor-principal-texto: whitesmoke;
+    --cor-principal-titulo: rgb(145, 244, 255);
+    --cor-contrate-texto:rgb(52, 158, 244);
+
+    /*Cor Borda*/
+    --cor-principal-borda: blue;
+    --cor-contraste-borda: white;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(150deg, var(--cor-principal-fundo)65%, var(--cor-contraste-fundo));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+
+}
+
+.introducao {
+    margin-right: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+p{
+    background-image: linear-gradient(to bottom, var(--cor-principal-texto), var(--cor-contrate-texto));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+
+    -webkit-text-fill-color: transparent;
+
+    font-size: 20px;
+}
+
+h1{
+    background-image: linear-gradient(to bottom, var(--cor-principal-titulo), var(--cor-contrate-texto));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+
+    -webkit-text-fill-color: transparent;
+}
+h2 {
+    background-image: linear-gradient(to bottom, var(--cor-principal-titulo), var(--cor-contrate-texto));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+.meuCard{
+    background-color: var(--cor-principal-fundo);
+    border: 2px solid transparent;
+
+    border-image: linear-gradient(45deg, var(--cor-principal-borda), var(--cor-contraste-borda)) 1;
+    border-image-slice: 1;
+
+    padding-bottom: 25px;
+    margin: 10px;
+}
+
+.gitHub, .linkedin{
+    display: inline-block;
+}
+
+footer p{
+    font-size: 10px;
+}
+
+ul{
+    margin-left: 25%;
+}
